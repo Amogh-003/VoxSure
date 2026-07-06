@@ -1,0 +1,21 @@
+{
+  "name": "Deepika Padukone",
+  "phone_number": "+919876543224",
+  "age": 35,
+  "income_bracket": "High",
+  "family_size": 2,
+  "existing_policies": [
+    {
+      "policy_number": "HEH0948576233",
+      "type": "HDFC Life Easy Health",
+      "premium": 12000,
+      "benefit": "Daily Hospital Cash Benefit Option (DHCB)",
+      "nominee": "Ranveer Singh (Husband)"
+    }
+  ],
+  "last_claim_date": "2025-07-22",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2026-07-22",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

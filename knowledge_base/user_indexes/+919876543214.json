@@ -1,0 +1,28 @@
+{
+  "name": "Suresh Pillai",
+  "phone_number": "+919876543214",
+  "age": 65,
+  "income_bracket": null,
+  "family_size": null,
+  "existing_policies": [
+    {
+      "policy_number": "HIA0234876535",
+      "type": "New Immediate Annuity",
+      "premium": 4000000,
+      "benefit": "Life Annuity with Return of Premium/Purchase Price on diagnosis of Critical Illness",
+      "nominee": "Lakshmi Pillai (Wife)"
+    },
+    {
+      "policy_number": "HGP0142876535",
+      "type": "Guaranteed Pension Plan",
+      "premium": 500000,
+      "benefit": "Deferred Pension savings plan with guaranteed vesting additions",
+      "nominee": "Lakshmi Pillai (Wife)"
+    }
+  ],
+  "last_claim_date": "2025-02-15",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2026-07-22",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

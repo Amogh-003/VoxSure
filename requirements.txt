@@ -1,0 +1,8 @@
+google-adk
+mcp
+python-dotenv
+streamlit
+google-cloud-speech
+google-cloud-texttospeech
+chromadb
+google-genai

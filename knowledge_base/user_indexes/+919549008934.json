@@ -1,0 +1,28 @@
+{
+  "name": "Jatin Kapoor",
+  "phone_number": "+919549008934",
+  "age": 41,
+  "income_bracket": "Middle",
+  "family_size": 2,
+  "existing_policies": [
+    {
+      "policy_number": "EH2200000001",
+      "type": "HDFC Life Easy Health",
+      "premium": 12600,
+      "benefit": "Optima Restore Health Cover - Plan Option B - Rs. 1,000,000 Sum Insured",
+      "nominee": "Chakradhar Deol (16, Banjara Hills, Hyderabad - 500034)"
+    },
+    {
+      "policy_number": "CC3300000001",
+      "type": "HDFC Life Cancer Care",
+      "premium": 6413,
+      "benefit": "Silver Plan - 100% payout on Major Cancer Diagnosis - Rs. 500,000 Sum Insured",
+      "nominee": "Chakradhar Deol (16, Banjara Hills, Hyderabad - 500034)"
+    }
+  ],
+  "last_claim_date": null,
+  "last_claim_status": null,
+  "renewal_due_date": "2027-07-06",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

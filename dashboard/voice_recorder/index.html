@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .mic-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 10px;
+            color: #e75656;
+            font-family: sans-serif;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+        #mic-btn {
+            background: #ef4444;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: rgb(59, 132, 235);
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+            transition: 0.3s;
+        }
+
+        #status {
+            font-size: 0.95rem;
+            color: #3343ea;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mic-container">
+        <button id="mic-btn">🎤</button>
+        <div id="status">Click mic to speak your query</div>
+    </div>
+    <script>
+        const btn = document.getElementById('mic-btn');
+        const status = document.getElementById('status');
+        let recording = false;
+
+        // 1. Immediately send componentReady to Streamlit to prevent loading timeout error
+        window.parent.postMessage({
+            isStreamlitMessage: true,
+            type: "streamlit:componentReady",
+            apiVersion: 1
+        }, "*");
+
+        // 2. Set initial frame height
+        window.parent.postMessage({
+            isStreamlitMessage: true,
+            type: "streamlit:setFrameHeight",
+            height: 65
+        }, "*");
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            status.innerText = "Speech input not supported.";
+            btn.style.display = "none";
+        } else {
+            const recognition = new SpeechRecognition();
+            // Lock speech input to English
+            recognition.lang = 'en-IN';
+
+            recognition.onstart = () => {
+                recording = true;
+                btn.style.background = "#22c55e";
+                btn.style.boxShadow = "0 0 20px rgba(34, 197, 94, 0.8)";
+                status.innerText = "Listening... Speak now!";
+                if ('speechSynthesis' in window) {
+                    window.speechSynthesis.cancel();
+                }
+            };
+
+            recognition.onend = () => {
+                recording = false;
+                btn.style.background = "#ef4444";
+                btn.style.boxShadow = "0 0 10px rgba(239, 68, 68, 0.5)";
+            };
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                status.innerText = "Transcribed: " + transcript;
+
+                // 3. Send the transcribed value back to Python
+                window.parent.postMessage({
+                    isStreamlitMessage: true,
+                    type: "streamlit:setComponentValue",
+                    value: transcript
+                }, "*");
+            };
+
+            btn.addEventListener('click', () => {
+                if (!recording) {
+                    recognition.start();
+                } else {
+                    recognition.stop();
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

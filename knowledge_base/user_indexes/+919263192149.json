@@ -1,0 +1,28 @@
+{
+  "name": "Arya Sagar",
+  "phone_number": "+919263192149",
+  "age": 42,
+  "income_bracket": "Middle",
+  "family_size": 2,
+  "existing_policies": [
+    {
+      "policy_number": "EH2200000008",
+      "type": "HDFC Life Easy Health",
+      "premium": 14600,
+      "benefit": "Optima Restore Health Cover - Plan Option D - Rs. 1,000,000 Sum Insured",
+      "nominee": "Fitan Goda (196, Connaught Place, Delhi - 110001)"
+    },
+    {
+      "policy_number": "CC3300000008",
+      "type": "HDFC Life Cancer Care",
+      "premium": 20203,
+      "benefit": "Silver Plan - 100% payout on Major Cancer Diagnosis - Rs. 1,500,000 Sum Insured",
+      "nominee": "Fitan Goda (196, Connaught Place, Delhi - 110001)"
+    }
+  ],
+  "last_claim_date": "2025-12-05",
+  "last_claim_status": "Rejected",
+  "renewal_due_date": "2026-11-14",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

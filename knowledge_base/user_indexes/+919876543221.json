@@ -1,0 +1,21 @@
+{
+  "name": "Rajesh Sharma",
+  "phone_number": "+919876543221",
+  "age": 45,
+  "income_bracket": null,
+  "family_size": null,
+  "existing_policies": [
+    {
+      "policy_number": "HEH0948576231",
+      "type": "HDFC Life Easy Health",
+      "premium": 25000,
+      "benefit": "Optima Restore Health Cover - Rs 10 Lakh Sum Insured",
+      "nominee": "Aarti Sharma (Wife)"
+    }
+  ],
+  "last_claim_date": "2025-06-11",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2027-07-06",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

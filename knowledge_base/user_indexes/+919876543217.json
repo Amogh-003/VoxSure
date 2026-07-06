@@ -1,0 +1,28 @@
+{
+  "name": "Harpreet Singh Gill",
+  "phone_number": "+919876543217",
+  "age": 65,
+  "income_bracket": null,
+  "family_size": null,
+  "existing_policies": [
+    {
+      "policy_number": "HIA0234876538",
+      "type": "New Immediate Annuity",
+      "premium": 2800000,
+      "benefit": "Life Annuity with Return of Premium/Purchase Price in Parts",
+      "nominee": "Simran Gill (Daughter)"
+    },
+    {
+      "policy_number": "HGP0142876538",
+      "type": "Guaranteed Pension Plan",
+      "premium": 220000,
+      "benefit": "Deferred Pension savings plan with guaranteed vesting additions",
+      "nominee": "Simran Gill (Daughter)"
+    }
+  ],
+  "last_claim_date": "2025-04-12",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2026-09-14",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

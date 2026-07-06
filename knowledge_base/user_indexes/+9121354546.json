@@ -1,0 +1,13 @@
+{
+  "name": "Amiksha",
+  "phone_number": "+9121354546",
+  "age": 28,
+  "income_bracket": "Middle",
+  "family_size": 2,
+  "existing_policies": [],
+  "last_claim_date": null,
+  "last_claim_status": null,
+  "renewal_due_date": "2027-07-06",
+  "preferred_language": "en",
+  "is_new_lead": true
+}

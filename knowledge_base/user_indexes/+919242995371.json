@@ -1,0 +1,28 @@
+{
+  "name": "Sudiksha Pathak",
+  "phone_number": "+919242995371",
+  "age": 39,
+  "income_bracket": "Middle",
+  "family_size": 2,
+  "existing_policies": [
+    {
+      "policy_number": "EH2200000003",
+      "type": "HDFC Life Easy Health",
+      "premium": 2500,
+      "benefit": "Optima Restore Health Cover - Plan Option B - Rs. 200,000 Sum Insured",
+      "nominee": "Finn Mital (147, Marine Drive, Mumbai - 400002)"
+    },
+    {
+      "policy_number": "CC3300000003",
+      "type": "HDFC Life Cancer Care",
+      "premium": 5817,
+      "benefit": "Silver Plan - 100% payout on Major Cancer Diagnosis - Rs. 500,000 Sum Insured",
+      "nominee": "Finn Mital (147, Marine Drive, Mumbai - 400002)"
+    }
+  ],
+  "last_claim_date": null,
+  "last_claim_status": null,
+  "renewal_due_date": "2026-11-14",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

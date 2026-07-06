@@ -1,0 +1,28 @@
+{
+  "name": "Nikhil Verma",
+  "phone_number": "+919876543215",
+  "age": 65,
+  "income_bracket": null,
+  "family_size": null,
+  "existing_policies": [
+    {
+      "policy_number": "HIA0234876536",
+      "type": "New Immediate Annuity",
+      "premium": 1200000,
+      "benefit": "Life Annuity with 5% escalation",
+      "nominee": "Kavita Verma (Mother)"
+    },
+    {
+      "policy_number": "HGP0142876536",
+      "type": "Guaranteed Pension Plan",
+      "premium": 60000,
+      "benefit": "Deferred Pension savings plan with guaranteed vesting additions",
+      "nominee": "Kavita Verma (Mother)"
+    }
+  ],
+  "last_claim_date": "2025-09-01",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2026-12-05",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

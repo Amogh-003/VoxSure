@@ -1,0 +1,28 @@
+{
+  "name": "Kai Kota",
+  "phone_number": "+919468804211",
+  "age": 35,
+  "income_bracket": "Middle",
+  "family_size": 2,
+  "existing_policies": [
+    {
+      "policy_number": "EH2200000007",
+      "type": "HDFC Life Easy Health",
+      "premium": 3400,
+      "benefit": "Optima Restore Health Cover - Plan Option E - Rs. 200,000 Sum Insured",
+      "nominee": "Ojas Sen (31, Anna Salai, Chennai - 600002)"
+    },
+    {
+      "policy_number": "CC3300000007",
+      "type": "HDFC Life Cancer Care",
+      "premium": 19144,
+      "benefit": "Silver Plan - 100% payout on Major Cancer Diagnosis - Rs. 2,000,000 Sum Insured",
+      "nominee": "Ojas Sen (31, Anna Salai, Chennai - 600002)"
+    }
+  ],
+  "last_claim_date": null,
+  "last_claim_status": null,
+  "renewal_due_date": "2026-11-14",
+  "preferred_language": "en",
+  "is_new_lead": false
+}

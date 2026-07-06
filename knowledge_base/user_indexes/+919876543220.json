@@ -1,0 +1,21 @@
+{
+  "name": "Antigravity",
+  "phone_number": "+919876543220",
+  "age": 30,
+  "income_bracket": null,
+  "family_size": null,
+  "existing_policies": [
+    {
+      "policy_number": "HCC0384762310",
+      "type": "HDFC Life Cancer Care",
+      "premium": 15000,
+      "benefit": "Gold Plan - 100% payout on Major Cancer Diagnosis & 3-year Premium Waiver",
+      "nominee": "AI Developer (Creator)"
+    }
+  ],
+  "last_claim_date": "2025-09-12",
+  "last_claim_status": "Paid",
+  "renewal_due_date": "2026-12-01",
+  "preferred_language": "en",
+  "is_new_lead": false
+}
