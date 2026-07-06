@@ -33,7 +33,7 @@ def extract_relevant_sentences(context_text: str, query: str) -> str:
     that contain query terms, keeping it short and direct.
     """
     if not context_text or "No matching clauses" in context_text or "No matching" in context_text:
-        return "The InsureVoice AI policy advisor does not have specific details about that policy. For detailed coverage, premium, and benefit information, please refer to your official policy document."
+        return "The VoxSure policy advisor does not have specific details about that policy. For detailed coverage, premium, and benefit information, please refer to your official policy document."
         
     sentences = re.split(r'(?<=[.!?])\s+', context_text)
     query_words = [w.lower() for w in re.findall(r'\b\w+\b', query) if len(w) > 2]
@@ -110,13 +110,13 @@ def get_mock_agent_response(new_message) -> list:
     if "incoming call connected" in text_lower:
         if customer:
             policies_list = ", ".join([p["type"] for p in customer.get("existing_policies", [])])
-            output_text = f"Hello {name}! Warm welcome to InsureVoice AI. I see you have active coverage with us ({policies_list}). How can I help you today?"
+            output_text = f"Hello {name}! Warm welcome to VoxSure. I see you have active coverage with us ({policies_list}). How can I help you today?"
         else:
             st.session_state.intake_name = None
             st.session_state.intake_age = None
             st.session_state.intake_income = None
             st.session_state.intake_family = None
-            output_text = "Welcome to InsureVoice AI! I see you are calling from a new number. May I know your full name, please?"
+            output_text = "Welcome to VoxSure! I see you are calling from a new number. May I know your full name, please?"
     elif not customer:
         history = st.session_state.chat_history
         assistant_msgs = [h["content"] for h in history if h["role"] == "assistant"]
@@ -181,7 +181,7 @@ def get_mock_agent_response(new_message) -> list:
                     st.session_state.intake_amount = 500000
                 
         if not st.session_state.intake_name:
-            output_text = "Welcome to InsureVoice AI! I see you are calling from a new number. May I know your full name, please?"
+            output_text = "Welcome to VoxSure! I see you are calling from a new number. May I know your full name, please?"
         elif not st.session_state.intake_age:
             output_text = f"Thank you, {st.session_state.intake_name}. May I know your age, please?"
         elif not st.session_state.intake_income:
@@ -527,7 +527,7 @@ def load_session_state():
 
 # Set Streamlit Page Configuration
 st.set_page_config(
-    page_title="InsureVoice AI - Agent Dashboard",
+    page_title="VoxSure - Agent Dashboard",
     page_icon="📞",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -687,7 +687,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App Title Section
-st.markdown('<div class="title-gradient">InsureVoice AI</div>', unsafe_allow_html=True)
+st.markdown('<div class="title-gradient">VoxSure</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Autonomous, Voice-First Customer Service Agent • Console Simulator</div>', unsafe_allow_html=True)
 
 # ----------------- SIDEBAR: Simulator Controls & Parameters -----------------
@@ -861,7 +861,7 @@ if st.session_state.active_phone:
     <div class="glass-card" style="padding: 12px 18px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; border-left: 4px solid #22c55e;">
         <div style="display: flex; align-items: center; gap: 10px;">
             <span style="height: 12px; width: 12px; background-color: #22c55e; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #22c55e; animation: pulse 2s infinite;"></span>
-            <strong style="color: #ffffff; font-size: 1.05rem;">InsureVoice AI Status:</strong> <span style="color: #e2e8f0; font-weight: 500;">Connected</span>
+            <strong style="color: #ffffff; font-size: 1.05rem;">VoxSure Status:</strong> <span style="color: #e2e8f0; font-weight: 500;">Connected</span>
         </div>
         <div style="color: #6366f1; font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">
             Active Agent: Master Coordinator
@@ -1330,7 +1330,7 @@ if st.session_state.active_phone:
                         st.rerun()
             
             # Chat input
-            if user_input := st.chat_input("Speak to InsureVoice AI..."):
+            if user_input := st.chat_input("Speak to VoxSure..."):
                 with st.chat_message("user"):
                     st.write(user_input)
                 st.session_state.caller_sentiment = detect_sentiment(user_input)
